@@ -1,10 +1,16 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, Button, TextInput, View} from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={{padding: 50}}>
+      <View>
+        <TextInput
+          placeholder="Goals"
+          style={{borderColor: 'black', borderWidth: 1, padding: 10}}
+        />
+        <Button title="Add" />
+      </View>
     </View>
   );
 }
